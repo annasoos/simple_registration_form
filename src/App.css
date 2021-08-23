@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  color: rgb(94, 113, 102);
+
+}
+
+img#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  animation: scale-in-center 3s;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+  width: 650px;
+  background-color: rgba(221, 174, 70, 0.9);
+  border-radius: 100px 0px;
+
+  animation: scale-in-center 3s;
+}
+
+@keyframes scale-in-center {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+form {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+label {
+  font-size: 22px;
+  text-align: center;
+}
+
+#inputField {
+  color: white;
+  width: 400px;
+  text-align: center;
+  border: 0.3px solid rgba(94, 113, 102, 0.6);
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#inputField::placeholder {
+  color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+}
+
+
+hr {
+  display: block;
+  background-color: #5e7166;
+  border: 0;
+  width: 100%;
+  height: 0.5px;
+  margin: 10px;
+}
+
+#submitBtn {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #5e7166;
+  color: white;
+  text-transform: none;
+  font-size: 18px;
+}
+
+#facebookIcon {
+  color: rgb(67, 101, 175);
+  font-size: 55px;
+}
+
+#googleIcon {
+  height: 55px;
+  width: 55px;
+}
+
+#formIcon {
+  color: #5e7166;
+  margin-right: 10px;
+  font-size: 20px;
+  height: auto;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
